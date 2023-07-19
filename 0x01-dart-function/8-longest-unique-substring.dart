@@ -16,9 +16,3 @@ String longestUniqueSubstring(String str) {
 
   return longestSubstring;
 }
-
-void main() {
-  print(longestUniqueSubstring("abcacbd"));
-  print(longestUniqueSubstring("aaaaaaaa"));
-  print(longestUniqueSubstring("abcde"));
-}

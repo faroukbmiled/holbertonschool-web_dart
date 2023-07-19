@@ -6,9 +6,3 @@ bool isPalindrome(String s) {
   String reversed = s.split('').reversed.join('');
   return s == reversed;
 }
-
-void main() {
-  print(isPalindrome("aa"));
-  print(isPalindrome("abcba"));
-  print(isPalindrome("abcde"));
-}

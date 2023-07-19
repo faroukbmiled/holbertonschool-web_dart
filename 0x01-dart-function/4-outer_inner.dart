@@ -5,7 +5,3 @@ void outer(String name, String id) {
 String inner() {
   return "";
 }
-
-void main() {
-  outer("Youssef Belhadj", "001");
-}

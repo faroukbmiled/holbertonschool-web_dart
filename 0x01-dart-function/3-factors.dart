@@ -7,9 +7,3 @@ int fact(int f) {
     return f * fact(f - 1);
   }
 }
-
-void main() {
-  print(fact(0));
-  print(fact(1));
-  print(fact(5));
-}

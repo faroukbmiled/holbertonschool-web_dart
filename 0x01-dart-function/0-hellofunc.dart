@@ -1,7 +1,3 @@
 void helloFunction(String str) {
-  print("Hello $str from Dart");
-}
-
-void main() {
-  helloFunction("Holberton");
+print('Hello $str from dart');
 }

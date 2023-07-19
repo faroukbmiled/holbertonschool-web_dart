@@ -18,9 +18,3 @@ bool isPalindrome(String s) {
   String reversed = s.split('').reversed.join('');
   return s == reversed;
 }
-
-void main() {
-  print(longestPalindrome("abcde"));
-  print(longestPalindrome("azeghjhg"));
-  print(longestPalindrome("aaabvf"));
-}
