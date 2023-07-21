@@ -13,7 +13,7 @@ class Password {
 
   @override
   String toString() {
-    return "Your Password is: ${isValid()}";
+    return "Your Password is: \n${isValid()}";
   }
 
   String get password => _password;
