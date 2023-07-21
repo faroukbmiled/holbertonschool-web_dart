@@ -21,6 +21,6 @@ class Password {
 
   @override
   String toString() {
-    return "Your Password is: ${isValid() ? 'valid' : 'invalid'}";
+    return "Your Password is: ${isValid()}";
   }
 }
