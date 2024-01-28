@@ -16,8 +16,8 @@ class User extends Password {
       'id': this.id,
       'name': this.name,
       'age': this.age,
-      'height': this.height,
-      'user_password': this.user_password,
+      'height': this.height
+      // 'user_password': this.user_password,
     };
   }
 
