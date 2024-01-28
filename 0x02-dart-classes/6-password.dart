@@ -17,6 +17,10 @@ class Password {
     return false;
   }
 
+  set password(String? password) {
+    _password = password ?? '';
+  }
+
   @override
   String toString() {
     return "Your Password is: $_password";
