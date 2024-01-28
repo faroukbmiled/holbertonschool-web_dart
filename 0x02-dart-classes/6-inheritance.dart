@@ -1,4 +1,4 @@
-import '4-mutables.dart';
+import '6-password.dart';
 
 class User extends Password {
   String? name;
@@ -7,14 +7,17 @@ class User extends Password {
   int? id;
   String user_password = "";
 
-  User({this.id, this.name, this.age, this.height, this.user_password = ''}) : super(password: user_password);
+  User({this.id, this.name, this.age, this.height, String? user_password}) : super(password: user_password ?? '') {
+    this.user_password = user_password ?? '';
+  }
 
   Map toJson() {
     return {
       'id': this.id,
       'name': this.name,
       'age': this.age,
-      'height': this.height
+      'height': this.height,
+      'user_password': this.user_password,
     };
   }
 
@@ -24,7 +27,7 @@ class User extends Password {
       age: userJson["age"],
       height: userJson["height"],
       id: userJson["id"],
-      user_password: '',
+      user_password: userJson["user_password"] ?? '',
     );
   }
 

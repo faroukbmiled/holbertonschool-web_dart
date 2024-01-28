@@ -1,10 +1,10 @@
 class Password {
   String? _password = "";
   String? get password => _password;
-  set password(String? password) => _password = password;
+  set password(String? password) => _password = password ?? '';
 
   Password({required String password}) {
-    _password = password;
+    _password = password ?? '';
   }
 
   bool isValid() {
